@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="task-form">
+        <h2>Add Task</h2>
+        <form onsubmit="addTask(event)">
+            <input type="text" id="task-title" name="title" placeholder="Task title">
+            <input type="text" id="task-description" name="description" placeholder="Task description">
+            <input type="date" id="task-due-date" name="dueDate" placeholder="Due date">
+            <button  type="submit">Add Task</button>
+        </form>
+    </div>
+    <h2>Tasks</h2>
+    <div id="task-container">
+        <select onchange="filterTasks(event)" name="" id="filter" id="">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="not-completed">Pending</option>
+        </select>
+        <select onchange="sortTasks(event)" name="" id="sort" id="">
+            <option value="timestamp">Recents</option>
+            <option value="dueDate">Upcoming</option>
+        </select>
+    </div>
+    <ul id="task-list">
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
