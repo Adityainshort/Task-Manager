@@ -21,10 +21,3 @@ A lightweight and intuitive task management web app built with vanilla JavaScrip
 
 Assessment Task by **House of MarkTech**  
 ⏱️ Completed in **2 hours**
-
-
-## 🚀 Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/task-manager-app.git
